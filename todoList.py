@@ -1,4 +1,4 @@
-todoList = [""]
+todoList = []
 
 rodando = True
 
@@ -12,7 +12,7 @@ while rodando == True:
     todoList.append(task)
     
     #show list
-    print ("\nSuas tarefas são:\n",todoList,"\n\ndigite 'sair' para parar o programa\ndigite 'remover' para remover uma tarefa\n")
+    print ("\nvoce tem " , len(todoList) ," tarefas, são:\n",todoList,"\n\ndigite 'sair' para parar o programa\ndigite 'remover' para remover uma tarefa\n")
     
     # QUIT
     if task == "sair":
@@ -22,7 +22,7 @@ while rodando == True:
         removeTask = input('qual tarefa voce deseja remover?\n')
         todoList.remove(removeTask)
         todoList.remove('remover')
-        print('todoList')
+        print("\nvoce tem " , len(todoList) ," tarefas, são:\n",todoList,"\n\ndigite 'sair' para parar o programa\ndigite 'remover' para remover uma tarefa\n")
         removeTask = ""
 
 #basico...
